@@ -1,0 +1,57 @@
+- 9/5
+    
+    1.
+    
+    int num = 20;
+    std::cout << "Hello World!" << std::endl; //printf("Hello World!|n");//
+    std::cout << "Hello " << "World!" << std::endl; //printf("Hello World!|n");//
+    std::cout << num;  //printf("%d", num)// ;
+    return 0;
+    
+    2.
+    
+    int val1;
+    std::cout << "첫 번째 숫자입력:";
+    std::cin >> val1;  //cin=scanf
+    int val2;
+    std::cout << "두 번째 숫자입력:";
+    std::cin >> val2;
+    int result = val1 + val2;
+    std::cout << "덧셈결과: " << result << std::endl;
+    return 0;
+    
+    1. 함수 오버로딩
+    
+    int MyFunc(int num)
+    {
+    num++
+    return num;
+    }
+    
+    4.
+    #include <iostream>
+    int Multiplier(int num1);
+    int Multiplier(int num1,int num2);
+    int Multiplier(int num1,int num2 ,int num3);
+    
+    int main()
+    {
+      std::cout << Multiplier(1) << std::endl;
+      std::cout << Multiplier(1,2) << std::endl;
+      std::cout << Multiplier(1,2,3) << std::endl;
+      return 0;
+      
+    }
+    int Multiplier(int num1)
+    {
+      return num1;
+    }
+    int Multiplier(int num1,int num2)
+    {
+      return num1*num2;
+    }
+    int Multiplier(int num1,int num2 ,int num3);
+    {
+      return num1*num2*num3; 
+    }
+    
